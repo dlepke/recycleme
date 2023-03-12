@@ -1,26 +1,44 @@
+@font-face {
+  font-family: ptSans;
+  src: url("../fonts/avenir_ff/AvenirLTStd-Book.otf");
+}
+
 body {
-  background-color: antiquewhite;
+  background-color: #5ba3a2;
   display: block;
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  font-family: ptSans;
 }
 
 header {
-  height: 10%;
+  height: 5em;
+  width: 100%;
+  background-color: #dbe9e8;
+  margin: 0;
+  display: flex;
+  align-content: center;
 }
 
 #chatbot-container {
   height: 80%;
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: center;
   margin: auto;
+  margin-top: 2%;
+  box-shadow: 2px 2px 5px lightgrey;
+  background-color: #37475e;
+  padding: 2%;
+  border-radius: 10px;
 }
 
 #messagePanel {
   border-radius: 10px;
-  background-color: ghostwhite;
+  background-color: #dbebeb;
   flex-grow: 1;
   padding: 1%;
 }
@@ -29,7 +47,7 @@ header {
   margin-top: 1%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 
 #chatEntry {
@@ -39,21 +57,26 @@ header {
 }
 
 .message {
-  background-color: lightblue;
+  background-color: #919ea7;
+  color: white;
   width: fit-content;
   padding: 1%;
   margin: 2%;
   border-radius: 10px;
   /* border: 1px solid blue; */
+  box-shadow: 2px 2px 5px lightgrey;
+  text-align: center;
+  vertical-align: center;
 }
 
 .userMsg {
-  background-color: plum;
+  background-color: #7c8494;
+  color: white;
   margin-left: auto;
 }
 
 #chatButton {
-  background-color: cornflowerblue;
+  background-color: #91b044;
   padding: 1%;
   border-radius: 10px;
   margin-left: 1%;
