@@ -21,6 +21,7 @@ function addUserMessage() {
     const messageList = document.getElementById("messageList");
     const newMessage = document.createElement("p");
     newMessage.classList.add("userMsg");
+    newMessage.classList.add("message");
     const textNode = document.createTextNode(msg);
     newMessage.append(textNode);
     messageList.append(newMessage);
@@ -34,6 +35,7 @@ function getBotReply() {
   const messageList = document.getElementById("messageList");
   const newMessage = document.createElement("p");
   newMessage.classList.add("botMsg");
+  newMessage.classList.add("message");
   const textNode = document.createTextNode(msg);
   newMessage.append(textNode);
   messageList.append(newMessage);
