@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>RecycleMe</title>
+    <script src="../js/index.js"></script>
+  </head>
+
+  <body>
+    <h1>RecycleMe</h1>
+    <p>A chatbot to help you improve your recycling habits!</p>
+    <div id="chatbot-container">
+      <div id="messagePanel">
+        <div id="messageList">
+          <p id="startMessage" class="message">
+            Hello! What can I help you dispose of today?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="inputPanel">
+      <input type="text" id="chatEntry" />
+      <input
+        type="button"
+        id="chatButton"
+        value="Enter"
+        onclick="addUserMessage()"
+      />
+    </div>
+
+    <script>
+      const input = document.getElementById("chatEntry");
+
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("chatButton").click();
+        }
+      });
+    </script>
+  </body>
+</html>
