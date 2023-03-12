@@ -3,12 +3,15 @@
 <html>
   <head>
     <title>RecycleMe</title>
+    <link rel="stylesheet" href="../css/index.css" />
     <script src="../js/index.js"></script>
   </head>
 
   <body>
-    <h1>RecycleMe</h1>
-    <p>A chatbot to help you improve your recycling habits!</p>
+    <header>
+      <h1>RecycleMe</h1>
+      <p>A chatbot to help you improve your recycling habits!</p>
+    </header>
     <div id="chatbot-container">
       <div id="messagePanel">
         <div id="messageList">
@@ -17,15 +20,15 @@
           </p>
         </div>
       </div>
-    </div>
-    <div id="inputPanel">
-      <input type="text" id="chatEntry" />
-      <input
-        type="button"
-        id="chatButton"
-        value="Enter"
-        onclick="addUserMessage()"
-      />
+      <div id="inputPanel">
+        <input type="text" id="chatEntry" />
+        <input
+          type="button"
+          id="chatButton"
+          value="Enter"
+          onclick="addUserMessage()"
+        />
+      </div>
     </div>
 
     <script>
